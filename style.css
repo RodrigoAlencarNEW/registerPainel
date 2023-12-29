@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#042044, #06334d);
+}
+
+.hide {
+    display: none;
+}
+
+.containerAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 600px;
+    border-radius: 1rem;
+}
+
+.bannerRegister {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/people.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.bannerImage {
+    background-color: rgba(31, 48, 141, 0.548);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.tittleBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(94, 94, 94, 0.534);
+}
+
+.tittleBanner h1 {
+    display: flex;
+    text-align: left;
+    padding: 0 1rem;
+    font-size: 5rem;
+    flex-basis: auto;
+}
+
+
+.formRegister {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.formRegister h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.registerSubtittle {
+    font-size: 0.8rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formControl label {
+    display: flex;
+    margin-bottom: .2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.formControl input {
+    display: flex;
+    margin-bottom: 1rem;
+    border-radius: 2px 10px 2px 10px;
+    outline: none;
+    padding: 0.4rem;
+    box-shadow: 1px 1px 1px rgba(94, 94, 94, 0.041);
+    border: rgb(180, 180, 180) 1px solid;
+}
+
+#password {
+    margin-bottom: 0;
+}
+
+.generatorPass {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.generatorContainer {
+    display: flex;
+    margin-bottom: .5rem;
+    justify-content: center;
+}
+
+.generator {
+    border: #0420441f 1px solid;
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgb(255, 254, 254);
+    display: flex;
+    flex-direction: column;
+    padding: .6rem;
+    margin: 0 auto;
+}
+
+.tittleGenerator {
+    text-align: center;
+    margin-top: .3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #06334d;
+    margin-bottom: 1rem;
+}
+
+.tittleGenerator p {
+    margin-bottom: 0.2rem;
+}
+
+.tittleGenerator input {
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 3rem;
+    outline: none;
+    border: #0420441f 1px solid;
+    border-radius: 2px 10px 2px 10px;
+}
+
+.formGenerator {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.formGenerator label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+
+.btn,
+.useBtn,
+.submitBtn {
+    background-color: #06334d;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 100px;
+    opacity: 0.8;
+    transition: .4s;
+}
+
+.btn:hover,
+.useBtn:hover,
+.submitBtn:hover {
+    opacity: 1;
+}
+
+.submitBtn {
+    margin-top: .3rem;
+}
+
+.btnGenerator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn, .useBtn {
+    margin-top: 0.5rem;
+}
+
+.repeatPassword {
+    margin-top: 0.4rem;
+}
+
+#repeatPassword {
+    margin-bottom: 0.5rem;
+}
+
+.generatorText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.generatorText a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: rgb(0, 119, 255);
+}
+
+#quant {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border: #0420441f 1px solid;
+    background-color: #f1f1f1;
+    border-radius: 2px 10px 2px 10px;
+    padding: 0.3rem;
+    width: 3rem;
+    font-weight: bold;
+    outline: none;
+    text-align: center;
+    margin-bottom: 1rem;
+}

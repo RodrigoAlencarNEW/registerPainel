@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passGenerate</title>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="containerAll">
+        <div class="bannerRegister">
+            <div class="bannerImage">
+                <span class="tittleBanner">
+                    <h1>Seja Bem-vindo</h1>
+                </span>
+            </div>
+        </div>
+        <div class="formRegister">
+            <h2>Crie sua conta</h2>
+            <p class="registerSubtittle">Registre-se para utilizar todas as funcionalidades do sistema.</p>
+            <div class="formControl">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" autocomplete="off" placeholder="Digite seu nome">
+            </div>
+            <div class="formControl">
+                <label for="name">E-mail</label>
+                <input type="email" name="email" id="email" autocomplete="off" placeholder="Digite seu e-mail">
+            </div>
+            <div class="formControl" id="passwordContainer">
+                <label for="name">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <div class="generatorPass">
+                <span class="generatorText">
+                    <p>Quer ajuda para criar uma senha segura? <a href="#" class="link">Clique aqui</a></p>
+                </span>
+            </div>
+
+            <div class="genClass hide">
+                <div class="generatorContainer">
+                    <div class="generator">
+                        <div class="tittleGenerator">
+                            <p>SENHA GERADA</p>
+                            <input class="inputGenerator" type="text" value="" readonly>
+                        </div>
+                        <div class="formGenerator" id="quant">
+                            <label for="name">Quantidade de Caracteres</label>
+                            <input type="text" name="character" class="chars" autocomplete="off" min="1" max="15">
+                        </div>
+                        <div class="formGenerator">
+                            <label for="name">Com simbolos</label>
+                            <input type="checkbox" name="character" id="symbol" checked>
+                        </div>
+                        <div class="formGenerator">
+                            <label for="name">Letras</label>
+                            <input type="checkbox" name="character" id="letter" checked>
+                        </div>
+                        <div class="formGenerator">
+                            <label for="name">Números</label>
+                            <input type="checkbox" name="character" id="number" checked>
+                        </div>
+                        <div class="btnGenerator">
+                            <input type="button" value="Gerar" class="btn">
+                            <input type="button" value="Usar" class="useBtn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="passClass">
+                <div class="formControl" id="repeatPasswordContainer">
+                    <label for="name" class="repeatPassword">Confirme sua senha</label>
+                    <input type="password" name="password" id="repeatPassword" placeholder="Repita sua senha">
+                </div>
+            </div>
+
+            <button type="submit" class="submitBtn">Cadastrar</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
